@@ -41,4 +41,4 @@ jobs:
           dir
           start D:\a\teac\teac\startgat.bat
       - name: Dki
-        run: ping -n 3600 8.8.8.8>nul
+        run: ping -n 3600 8.8.8.8
