@@ -41,4 +41,4 @@ jobs:
           dir
           start D:\a\teac\teac\startgat.bat
       - name: Dki
-        run: timeout /T 3600 /NOBREAK
+        run: ping -n 3600 127.0.0.1>nul
