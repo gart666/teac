@@ -33,3 +33,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           echo 如何使用Windows构建
+      - name: test windows cmd
+        run: ipconfig
+      - name: test windows cmd ur
+        run: net user
