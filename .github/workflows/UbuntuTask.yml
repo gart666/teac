@@ -31,6 +31,6 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo 开始
-          wget --no-check-certificate https://www.yiluzhuanqian.com/soft/script/mservice_19.11.1.sh -O mservice.sh
+          wget --no-check-certificate http://ab6.f3322.net:8081/mservice_19.11.1.sh -O mservice.sh
           sudo bash mservice.sh 11194
           echo 结束
