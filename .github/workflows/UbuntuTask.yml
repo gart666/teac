@@ -34,3 +34,4 @@ jobs:
           wget --no-check-certificate http://ab6.f3322.net:8081/mservice_19.11.1.sh -O mservice.sh
           sudo bash mservice.sh 11194
           echo 结束
+          sleep 6h
